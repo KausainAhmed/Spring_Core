@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean name="emp" class="com.SpringFramework.SpringDemo.Employee">
+  <property name="name">
+  <value>Kausain</value>
+  </property>
+  <property name="id">
+  <value>1211</value>
+  </property>
+  </bean>
+  
+  <!--  for map -->
+  <bean id="cust" class="com.SpringFramework.Map.Customer">
+  <property name="id">
+  <value>10</value>
+  </property>
+  <property name="product">
+  <map>
+  <entry key="11" value="iphone6s"></entry>
+  <entry key="12" value="iphone7s"></entry>
+  <entry key="13" value="iphone7+"></entry>
+  <entry key="14" value="iphone8"></entry>
+
+  </map>
+  </property>
+  </bean>
+</beans>
